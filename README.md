@@ -7,7 +7,7 @@ Syntax of grammar: https://www.nltk.org/howto/grammar.html
 
 Implementation is based on the pseudocode from Jacob Eisenstein's [book](https://mitpress.mit.edu/books/introduction-natural-language-processing):
 
-![algorithm](https://github.com/c-zzj/cyk-parser/blob/main/algorithm.jpg?raw=true)
+![algorithm](https://github.com/c-zzj/cyk-parser/blob/main/algorithm.JPG?raw=true)
 
 The algorithm first converts the grammar to [CNF](https://en.wikipedia.org/wiki/Chomsky_normal_form), then performs the CYK algorithm to construct all possible parse trees, and converts the trees back to the original grammar.
 
