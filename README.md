@@ -9,7 +9,7 @@ Implementation is based on the pseudocode from Jacob Eisenstein's [book](https:/
 
 ![algorithm](https://github.com/c-zzj/cyk-parser/blob/main/algorithm.JPG?raw=true)
 
-The algorithm first converts the grammar to [CNF](https://en.wikipedia.org/wiki/Chomsky_normal_form), then performs the CYK algorithm to construct all possible parse trees, and converts the trees back to the original grammar.
+The code first converts the grammar to [CNF](https://en.wikipedia.org/wiki/Chomsky_normal_form), then performs the CYK algorithm to construct all possible parse trees, and converts the trees back to the original grammar.
 
 
 `french-grammar.txt` contains a (not really) subset of french grammar for illustration purposes.
