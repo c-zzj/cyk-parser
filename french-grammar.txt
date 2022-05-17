@@ -1,0 +1,157 @@
+# Basic sentence structure
+S -> NP-1-SG-SUBJ VP-1-SG
+S -> NP-2-SG-SUBJ VP-2-SG
+S -> NP-3-SG-SUBJ VP-3-SG
+S -> NP-1-PL-SUBJ VP-1-PL
+S -> NP-2-PL-SUBJ VP-2-PL
+S -> NP-3-PL-SUBJ VP-3-PL
+
+NP-1-SG-SUBJ -> PR-1-SG-SUBJ
+NP-2-SG-SUBJ -> PR-2-SG-SUBJ
+NP-3-SG-SUBJ -> PR-3-SG-SUBJ
+NP-1-PL-SUBJ -> PR-1-PL-SUBJ
+NP-2-PL-SUBJ -> PR-2-PL-SUBJ
+NP-3-PL-SUBJ -> PR-3-PL-SUBJ
+
+PR-1-SG-SUBJ -> 'je'
+PR-2-SG-SUBJ -> 'tu'
+PR-3-SG-SUBJ -> 'il' | 'elle'
+PR-1-PL-SUBJ -> 'nous'
+PR-2-PL-SUBJ -> 'vous'
+PR-3-PL-SUBJ -> 'ils' | 'elles'
+
+VP-1-SG -> V-1-SG | V-1-SG NP-OBJ
+VP-2-SG -> V-2-SG | V-2-SG NP-OBJ
+VP-3-SG -> V-3-SG | V-3-SG NP-OBJ
+VP-1-PL -> V-1-PL | V-1-PL NP-OBJ
+VP-2-PL -> V-2-PL | V-2-PL NP-OBJ
+VP-3-PL -> V-3-PL | V-3-PL NP-OBJ
+
+NP-OBJ -> NP-SG-OBJ | NP-PL-OBJ
+
+# Negation
+VP-1-SG -> ADV-NE-PRE V-1-SG ADV-NE-AFT | ADV-NE-PRE V-1-SG ADV-NE-AFT NP-OBJ
+VP-2-SG -> ADV-NE-PRE V-2-SG ADV-NE-AFT | ADV-NE-PRE V-2-SG ADV-NE-AFT NP-OBJ
+VP-3-SG -> ADV-NE-PRE V-3-SG ADV-NE-AFT | ADV-NE-PRE V-3-SG ADV-NE-AFT NP-OBJ
+VP-1-PL -> ADV-NE-PRE V-1-PL ADV-NE-AFT | ADV-NE-PRE V-1-PL ADV-NE-AFT NP-OBJ
+VP-2-PL -> ADV-NE-PRE V-2-PL ADV-NE-AFT | ADV-NE-PRE V-2-PL ADV-NE-AFT NP-OBJ
+VP-3-PL -> ADV-NE-PRE V-3-PL ADV-NE-AFT | ADV-NE-PRE V-3-PL ADV-NE-AFT NP-OBJ
+
+ADV-NE-PRE -> 'ne'
+ADV-NE-AFT -> 'pas'
+
+# Definite and proper noun phrases
+NP-3-SG-SUBJ -> DT-MASC N-SG-MASC
+NP-3-SG-SUBJ -> DT-FEM N-SG-FEM
+NP-3-PL-SUBJ -> DT-PL N-PL-MASC
+NP-3-PL-SUBJ -> DT-PL N-PL-FEM
+
+NP-SG-OBJ -> DT-MASC N-SG-MASC
+NP-SG-OBJ -> DT-FEM N-SG-FEM
+NP-PL-OBJ -> DT-PL N-PL-MASC
+NP-PL-OBJ -> DT-PL N-PL-FEM
+
+DT-MASC -> 'le'
+DT-FEM -> 'la'
+DT-PL -> 'les'
+
+NP-3-SG-SUBJ -> PN-WA-SG-MASC
+NP-3-SG-SUBJ -> PN-WA-SG-FEM
+NP-3-SG-SUBJ -> DT-MASC PN-RA-SG-MASC
+NP-3-SG-SUBJ -> DT-FEM PN-RA-SG-FEM
+NP-3-PL-SUBJ -> PN-WA-PL-MASC
+NP-3-PL-SUBJ -> PN-WA-PL-FEM
+NP-3-PL-SUBJ -> DT-PL PN-RA-PL-MASC
+NP-3-PL-SUBJ -> DT-PL PN-RA-PL-FEM
+
+NP-SG-OBJ -> PN-WA-SG-MASC
+NP-SG-OBJ -> PN-WA-SG-FEM
+NP-SG-OBJ -> DT-MASC PN-RA-SG-MASC
+NP-SG-OBJ -> DT-FEM PN-RA-SG-FEM
+NP-PL-OBJ -> PN-WA-PL-MASC
+NP-PL-OBJ -> PN-WA-PL-FEM
+NP-PL-OBJ -> DT-PL PN-RA-PL-MASC
+NP-PL-OBJ -> DT-PL PN-RA-PL-FEM
+
+# Direct object pronouns
+VP-1-SG -> NP-DO V-1-SG
+VP-2-SG -> NP-DO V-2-SG
+VP-3-SG -> NP-DO V-3-SG
+VP-1-PL -> NP-DO V-1-PL
+VP-2-PL -> NP-DO V-2-PL
+VP-3-PL -> NP-DO V-3-PL
+
+VP-1-SG -> ADV-NE-PRE NP-DO V-1-SG ADV-NE-AFT
+VP-2-SG -> ADV-NE-PRE NP-DO V-2-SG ADV-NE-AFT
+VP-3-SG -> ADV-NE-PRE NP-DO V-3-SG ADV-NE-AFT
+VP-1-PL -> ADV-NE-PRE NP-DO V-1-PL ADV-NE-AFT
+VP-2-PL -> ADV-NE-PRE NP-DO V-2-PL ADV-NE-AFT
+VP-3-PL -> ADV-NE-PRE NP-DO V-3-PL ADV-NE-AFT
+
+NP-DO -> PR-1-SG-OBJ | PR-2-SG-OBJ | PR-3-SG-OBJ
+NP-DO -> PR-1-PL-OBJ | PR-2-PL-OBJ | PR-3-PL-OBJ
+
+PR-1-SG-OBJ -> 'me'
+PR-2-SG-OBJ -> 'te'
+PR-3-SG-OBJ -> 'le' | 'la'
+PR-1-PL-OBJ -> 'nous'
+PR-2-PL-OBJ -> 'vous'
+PR-3-PL-OBJ -> 'les'
+
+# Adjectives
+NP-3-SG-SUBJ -> DT-MASC N-SG-MASC A-SG-MASC-AFT
+NP-3-SG-SUBJ -> DT-FEM N-SG-FEM A-SG-FEM-AFT
+NP-3-PL-SUBJ -> DT-PL N-PL-MASC A-PL-MASC-AFT
+NP-3-PL-SUBJ -> DT-PL N-PL-FEM A-PL-FEM-AFT
+
+NP-SG-OBJ -> DT-MASC N-SG-MASC A-SG-MASC-AFT
+NP-SG-OBJ -> DT-FEM N-SG-FEM A-SG-FEM-AFT
+NP-PL-OBJ -> DT-PL N-PL-MASC A-PL-MASC-AFT
+NP-PL-OBJ -> DT-PL N-PL-FEM A-PL-FEM-AFT
+
+NP-3-SG-SUBJ -> DT-MASC A-SG-MASC-PRE N-SG-MASC
+NP-3-SG-SUBJ -> DT-FEM A-SG-FEM-PRE N-SG-FEM
+NP-3-PL-SUBJ -> DT-PL A-PL-MASC-PRE N-PL-MASC
+NP-3-PL-SUBJ -> DT-PL A-PL-FEM-PRE N-PL-FEM
+
+NP-SG-OBJ -> DT-MASC A-SG-MASC-PRE N-SG-MASC
+NP-SG-OBJ -> DT-FEM A-SG-FEM-PRE N-SG-FEM
+NP-PL-OBJ -> DT-PL A-PL-MASC-PRE N-PL-MASC
+NP-PL-OBJ -> DT-PL A-PL-FEM-PRE N-PL-FEM
+
+### Open-class words
+# Verbs
+V-1-SG -> 'aime' | 'cherche' | 'regarde' | 'mange' | 'suis'
+V-2-SG -> 'aimes' | 'cherches' | 'regardes' | 'manges' | 'es'
+V-3-SG -> 'aime' | 'cherche' | 'regarde' | 'mange' | 'est'
+V-1-PL -> 'aimons' | 'cherchons' | 'regardons' | 'mangeons' | 'sommes'
+V-2-PL -> 'aimez' | 'cherchez' | 'regardez' | 'mangez' | 'etes'
+V-3-PL -> 'aiment' | 'cherchent' | 'regardent' | 'mangent' | 'sont'
+
+# Definite nouns
+N-SG-MASC -> 'chat' | 'poisson' | 'canadien' | 'anglais' | 'aide'
+N-SG-FEM -> 'television' | 'semaine' | 'canadienne' | 'anglaise' | 'aide'
+N-PL-MASC -> 'chats' | 'poissons' | 'canadiens' | 'anglais' | 'aides'
+N-PL-FEM -> 'televisions' | 'semaines' | 'canadiennes' | 'anglaises' | 'aides'
+
+# Proper Nouns
+PN-WA-SG-MASC -> 'Montreal' | 'Jonathan' | 'Paques'
+PN-WA-SG-FEM -> 'Montreal' | 'Alice'
+#PN-WA-PL-MASC -> 
+PN-WA-PL-FEM -> 'Paques'
+PN-RA-SG-MASC -> 'Canada'
+PN-RA-SG-FEM -> 'Angleterre'
+PN-RA-PL-MASC -> 'Etats-Unis'
+PN-RA-PL-FEM -> 'Philippines'
+
+# Adjectives
+A-SG-MASC-AFT -> 'noir' | 'heureux' | 'dernier'
+A-SG-FEM-AFT -> 'noire' | 'heureuse' | 'derniere'
+A-PL-MASC-AFT -> 'noirs' | 'heureux' | 'jolis' | 'derniers'
+A-PL-FEM-AFT -> 'noires' | 'heureuses' | 'dernieres'
+
+# Adjectives preceding nouns
+A-SG-MASC-PRE -> 'dernier' | 'beau' | 'grand' | 'petit' | 'joli'
+A-SG-FEM-PRE -> 'derniere' | 'belle' | 'grande' | 'petite' | 'jolie'
+A-PL-MASC-PRE -> 'derniers' | 'beaux' | 'grands' | 'petits' | 'jolis'
+A-PL-FEM-PRE -> 'dernieres' | 'belles' | 'grandes' | 'petites' | 'jolies'

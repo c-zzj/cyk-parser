@@ -1,0 +1,5 @@
+/.idea
+Handout.pdf
+writeup/*
+!writeup/a2-written.pdf
+!writeup/a2-written.tex
